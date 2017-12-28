@@ -1,0 +1,273 @@
+#contenedor,html{
+	height:100%;padding:0px;margin:0px;
+	background-image: url("../img/fondo.jpg");
+	font-family: Arial;
+}
+
+#izquierda{
+	display: inline-block; 
+	width: 25%;
+	height: 100%;
+	position: fixed;left: 0px;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	pointer-events: auto;
+}
+.parametros {
+    width: 74px;
+    height: 125px;
+    max-width: 45px;
+    background-color: #c4d9e0;
+    margin: 15px;
+    border-style: outset;
+    border-color: #d5e2d8;
+    font-size: 100%;
+    padding: 1px;
+    margin-bottom: 25px;
+}
+#botonOn{
+	display: none;
+	border-style: outset;
+	border-color:#d5e2d8;
+	background-color: #ce98e7;
+	margin: 10px;
+	margin-top: 5%;
+	color: black;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/propulsor.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 50% 50%;
+	text-align: center;
+}
+#botonOn:active {border-style: inset; background-color: #dbc2c7;}
+
+#derecha{display: none;}
+#derechaSmartphone{
+	background-image: url("../img/saturno.png");
+	background-repeat: no-repeat;
+	background-position: right; 
+	background-size: 60%;
+	display:block !important;
+	pointer-events: auto;
+	width:35%;height:100%;
+	position: fixed; right: 0px;
+}
+
+#reanudaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#reanudaSmartphone:hover {background-color: #ce98e7;} 
+#pausaSmartphone:active {border-style: inset;background-color: #d5e2d8;font-size: 100%;}
+#pausaSmartphone:hover {background-color: #ce98e7;} 
+#reiniciaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#reiniciaSmartphone:hover {background-color: #ce98e7;} 
+#ayudaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#ayudaSmartphone:hover {background-color: #ce98e7;} 
+#botonAjustesSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#botonAjustesSmartphone:hover {background-color: #ce98e7;}
+#close:active {border-style: inset;background-color: #ce98e7;}
+#close:hover {background-color: #ce98e7;} 
+#pausaSmartphone:hover {background-color: #ce98e7;font-size: 100%;}
+
+#reanudaSmartphone {
+	border-style: outset;
+	border-color: #d5e2d8;
+	display: none;
+	background-color: #dbc2c7;
+	color: black;
+	margin: 5%;
+	margin-bottom: 2px;
+	text-align: center; 
+	font-size: 130%;
+	width: 90%;
+	height: 70px;
+	background-image: url("../img/reanudar.png");
+	background-repeat: no-repeat;
+	background-size: 70px;
+	background-position: 0% 50%;
+	pointer-events: auto;
+}
+#pausaSmartphone {
+	border-style: outset;
+	border-color: #d5e2d8;
+	display: inline-block;
+	float: right;
+	background-color: #dbc2c7;
+	margin: 10px;
+	color: black;
+	text-align: center;
+	font-size: 0%;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/pausa.png");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: 50% 50%;
+}
+#reiniciaSmartphone {
+	border-style: outset;
+	border-color: #d5e2d8;
+	display: none;
+	background-color: #dbc2c7;
+	color: black;
+	margin: 5%;
+	margin-bottom: 2px;
+	text-align: center; 
+	font-size: 130%;
+	width: 90%;
+	height: 70px;
+	background-image: url("../img/reiniciar.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: 7px 50%;
+	pointer-events: auto;
+}
+#ayudaSmartphone {
+	border-style: outset;
+	border-color: #d5e2d8;
+	display: none;
+	background-color: #dbc2c7;
+	color: black;
+	margin: 5%;
+	margin-bottom: 2px;
+	text-align: center; 
+	font-size: 130%;
+	width: 90%;
+	height: 70px;
+	background-image: url("../img/ayuda.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: 7px 50%;
+	pointer-events: auto;
+}
+#botonAjustesSmartphone{
+	border-style: outset;
+	border-color: #d5e2d8;
+	display: none;
+	background-color: #dbc2c7;
+	color: black;
+	margin: 5%;
+	margin-bottom: 2px;
+	text-align: center; 
+	font-size: 130%;
+	width: 90%;
+	height: 70px;
+	background-image: url("../img/interfaz2.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: 7px 50%;
+	pointer-events: auto;
+}
+
+#settings{
+	display: none;
+	background-image: url("../img/interfaz1.png");
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#dificultad {
+	padding: 10px;
+	font-size: 120%;
+}
+#modeloLuna {
+	padding: 10px;
+	font-size: 120%;
+}
+#modeloNave {
+	padding: 10px;
+	font-size: 120%;
+}
+
+#menuInstrucciones {
+	background-image: url("../img/interfaz1.png");
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#menuInstrucciones b {
+	background-color: #c4d9e0;
+	border-style: outset;
+}
+#close {
+	background-color:#c4d9e0;
+	border-style: solid;
+	border-color: #2E8B57;
+	width: 40px;
+	max-width: 50px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+}
+
+
+#aterrizaje{
+	height:15%;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0%;
+}
+#superficie {
+	height: 100%; 
+	width: 100%;
+}
+#nave{
+	text-align:center;
+	position:fixed;
+	top:5%;
+	width:100%;
+	height:15%;
+}
+#imgNave{
+	height:100%;
+	display: block;
+	margin: auto;
+}
+#imgMotor{
+	height: 40%;
+	display: none;
+	margin: auto;
+}
+#saturno {
+	display:none;
+    text-align: left;
+    position: fixed;
+    top: 35%;
+    height: 10%;
+    left: 25%;
+}
+#jupiter {
+	display:none;
+    text-align: left;
+    position: fixed;
+    top: 48%;
+    height: 10%;
+    left: 5%;
+}
+
+#perdedor{
+	background-image: url("../img/interfaz1.png");
+	text-align: center;
+	border-style: outset;
+	position: absolute;
+	display: none;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+}
+#jugarOtraVez{display: none;}
+#jugarAgain{display: none;}
+#ganador{
+	background-image: url("../img/interfaz1.png");
+	text-align: center;
+	border-style: outset;
+	position: absolute;
+	display: none;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+}
