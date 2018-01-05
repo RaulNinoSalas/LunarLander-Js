@@ -1,3 +1,9 @@
+h1, h2, h3 {
+    color: #e0b12e;
+}
+p {
+    color: #c7ca2a;
+}
 #contenedor,html{
 	height:100%;padding:0px;margin:0px;
 	background-image: url("../img/fondo.jpg");
@@ -14,8 +20,8 @@
 	pointer-events: auto;
 }
 .parametros {
-    width: 74px;
-    height: 125px;
+    width: 75px;
+    height: 100px;
     max-width: 45px;
     background-color: #c4d9e0;
     margin: 15px;
@@ -32,7 +38,6 @@
 	background-color: #ce98e7;
 	margin: 10px;
 	margin-top: 5%;
-	color: black;
 	width: 70px;
 	height: 70px;
 	background-image: url("../img/propulsor.png");
@@ -41,7 +46,7 @@
 	background-position: 50% 50%;
 	text-align: center;
 }
-#botonOn:active {border-style: inset; background-color: #dbc2c7;}
+#botonOn:active {z-index:1;	border-style: inset; background-color: #dbc2c7;}
 
 #derecha{display: none;}
 #derechaSmartphone{
@@ -55,21 +60,26 @@
 	position: fixed; right: 0px;
 }
 
-#reanudaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
-#reanudaSmartphone:hover {background-color: #ce98e7;} 
-#pausaSmartphone:active {border-style: inset;background-color: #d5e2d8;font-size: 100%;}
-#pausaSmartphone:hover {background-color: #ce98e7;} 
-#reiniciaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
-#reiniciaSmartphone:hover {background-color: #ce98e7;} 
+#reanudarSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#reanudarSmartphone:hover {background-color: #ce98e7;}
+
+#pausarSmartphone:active {border-style: inset;background-color: #d5e2d8;font-size: 100%;}
+#pausarSmartphone:hover {background-color: #ce98e7;font-size: 100%;}
+
+#reiniciarSmartphone:active {border-style: inset;background-color: #d5e2d8;}
+#reiniciarSmartphone:hover {background-color: #ce98e7;} 
+
 #ayudaSmartphone:active {border-style: inset;background-color: #d5e2d8;}
 #ayudaSmartphone:hover {background-color: #ce98e7;} 
+
 #botonAjustesSmartphone:active {border-style: inset;background-color: #d5e2d8;}
 #botonAjustesSmartphone:hover {background-color: #ce98e7;}
+
 #close:active {border-style: inset;background-color: #ce98e7;}
 #close:hover {background-color: #ce98e7;} 
-#pausaSmartphone:hover {background-color: #ce98e7;font-size: 100%;}
 
-#reanudaSmartphone {
+
+#reanudarSmartphone {
 	border-style: outset;
 	border-color: #d5e2d8;
 	display: none;
@@ -87,7 +97,7 @@
 	background-position: 0% 50%;
 	pointer-events: auto;
 }
-#pausaSmartphone {
+#pausarSmartphone {
 	border-style: outset;
 	border-color: #d5e2d8;
 	display: inline-block;
@@ -104,7 +114,7 @@
 	background-size: 40%;
 	background-position: 50% 50%;
 }
-#reiniciaSmartphone {
+#reiniciarSmartphone {
 	border-style: outset;
 	border-color: #d5e2d8;
 	display: none;
@@ -158,8 +168,12 @@
 	background-position: 7px 50%;
 	pointer-events: auto;
 }
+#botonAjustesSmarphone p {
+	margin-top: 0px;
+}
 
-#settings{
+
+#modalidad{
 	display: none;
 	background-image: url("../img/interfaz1.png");
 	text-align: center;
@@ -167,11 +181,19 @@
 	width: 100%;
 	height: 100%;
 }
+#modalidad b {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#modalidad p {
+	color: #fafb05;
+	font-size: 30px;
+}
 #dificultad {
 	padding: 10px;
 	font-size: 120%;
 }
-#modeloLuna {
+#modeloSuperficie {
 	padding: 10px;
 	font-size: 120%;
 }
@@ -191,6 +213,10 @@
 #menuInstrucciones b {
 	background-color: #c4d9e0;
 	border-style: outset;
+}
+#menuInstrucciones p {
+	color: #fafb05;
+	font-size: 30px;
 }
 #close {
 	background-color:#c4d9e0;
@@ -259,8 +285,15 @@
 	left: 10%;
 	top: 10%;
 }
-#jugarOtraVez{display: none;}
-#jugarAgain{display: none;}
+#perdedor p {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#perdedor h2 {
+	color: #fafb05;
+	font-size: 30px;
+}
+
 #ganador{
 	background-image: url("../img/interfaz1.png");
 	text-align: center;
@@ -271,3 +304,13 @@
 	left: 10%;
 	top: 10%;
 }
+#ganador p {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#ganador h2 {
+	color: #fafb05;
+	font-size: 30px;
+}
+#jugarOtraVez{display: none;}
+#jugarAgain{display: none;}

@@ -283,7 +283,6 @@ p {
 
 #perdedor{
 	background-image: url("../img/interfaz1.png");
-	background-repeat: none;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -303,7 +302,6 @@ p {
 
 #ganador{
 	background-image: url("../img/interfaz1.png");
-	background-repeat: none;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
