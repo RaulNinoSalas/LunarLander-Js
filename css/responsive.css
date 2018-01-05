@@ -1,3 +1,9 @@
+h1, h2, h3 {
+    color: #e0b12e;
+}
+p {
+    color: #c7ca2a;
+}
 #contenedor,html{
 	height:100%;padding:0px;margin:0px;
 	background-image: url("../img/fondo.jpg");
@@ -85,6 +91,7 @@
 #reanudar img{
 	height:100%;
 }
+
 #pausar {
 	border-style: outset;
 	border-color: #c4d9e0;
@@ -127,6 +134,28 @@
 #reiniciar img{
 	height:90%;
 }
+#instrucciones {
+	border-style: outset;
+	border-color: #e0d1c4;
+	display: inline-block;
+	float: right;
+	background-color: #d5e2d8;
+	margin: 10px;
+	margin-top: 5%;
+	color: black;
+	font-size: 0%;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/ayuda.png");
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 50% 50%;
+	pointer-events: auto;
+}
+#instrucciones img{
+	height:100%;
+}
 
 #botonAjustes {
 	border-style: outset;
@@ -139,7 +168,7 @@
 	text-align: center;
 	vertical-align: text-top;
 	background-color: #d5e2d8;
-	background-image: url("../img/ayuda.png");
+	background-image: url("../img/interfaz2.png");
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: 50% 50%;
@@ -159,6 +188,14 @@
 	width: 80%;
 	left: 10%;
 	top: 10%;
+}
+#modalidad b {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#modalidad p {
+	color: #fafb05;
+	font-size: 30px;
 }
 #dificultad {
 	padding: 10px;
@@ -183,11 +220,11 @@
 	display: none;
 }
 #menuInstrucciones b {
-	background-color: #00FA9A;
+	background-color: #0f158b;
 	border-style: outset;
 }
 #menuInstrucciones p {
-	color: #c4d9e0;
+	color: #fafb05;
 	font-size: 30px;
 }
 #close {
@@ -246,7 +283,7 @@
 
 #perdedor{
 	background-image: url("../img/interfaz1.png");
-	background-size: absolute;
+	background-repeat: none;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -255,8 +292,16 @@
 	left: 10%;
 	top: 10%;
 }
+#perdedor p {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#perdedor h2 {
+	color: #fafb05;
+	font-size: 30px;
+}
 
-#userWin{
+#ganador{
 	background-image: url("../img/interfaz1.png");
 	background-repeat: none;
 	text-align: center;
@@ -266,6 +311,14 @@
 	width: 80%;
 	left: 10%;
 	top: 10%;
+}
+#ganador p {
+	background-color: #0f158b;
+	border-style: outset;
+}
+#ganador h2 {
+	color: #fafb05;
+	font-size: 30px;
 }
 #jugarOtraVezSmartphone{display: none;}
 #jugarAgainSmartphone{display: none;}
