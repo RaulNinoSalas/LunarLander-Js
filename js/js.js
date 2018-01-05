@@ -4,13 +4,13 @@ var g = 1.622;
 var a = g; //a= -g es para motor encendido
 var dt = 0.016683;
 var timer;
-var gasolina=100;
-var dificultad=1;
+var gasolina = 100;
+var dificultad = 1;
 var gasolinaTotal=100
 var intentos = 1;
-var modeloNave=1;
-var modeloSuperficie=1;
-var timerFuel=null;
+var modeloNave = 1;
+var modeloSuperficie = 1;
+var timerFuel = null;
 
 window.onload = function arrancarJuego(){
 	//CAPTURA SI EL DISPOSITIVO RECIBE EVENTOS OUNTOUCH (SMARTPHONE)
