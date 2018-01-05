@@ -74,7 +74,7 @@ window.onload = function arrancarJuego(){
 				break;
 			case 2:
 				document.getElementById("imgNave").src="img/nave.png";
-				document.getElementById("imgMotor").src="img/propulsor.gif";
+				document.getElementById("imgMotor").src="img/propulsor.png";
 				document.getElementById("modeloNave").innerHTML="Modelo Estandar";
 				modeloNave=1;
 				restart();
@@ -125,9 +125,9 @@ function stop(){
 //FUNCION PARA QUE CAIGA LA NAVE A TRAVES DE LA PANTALLA
 function moverNave(){
 	v +=a*dt;
-	document.getElementById("velocidad").innerHTML=v.toFixed(2);
+	document.getElementById("Velocidad").innerHTML=v.toFixed(2);
 	y +=v*dt;
-	document.getElementById("altura").innerHTML=y.toFixed(2);
+	document.getElementById("Altura").innerHTML=y.toFixed(2);
 	//mover hasta que top sea un 70% de la pantalla
 	if (y<70){ 
 		document.getElementById("nave").style.top = y+"%"; 
@@ -174,15 +174,15 @@ function finalizarJuego() {
 //FUNCION QUE ACTUA EN CUANTO SE ENCIENDE EL MOTOR
 function encenderMotor() {
 	a=-g;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
+	document.getElementById("Fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("Fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
 	document.getElementById("imgMotor").style.display="block";
 	if (timerFuel==null) { 
 			timerFuel=setInterval(function(){ actualizarGasolina(); }, 100);
 			}
 	if (gasolina<=0) {
 			apagarMotor();
-			document.getElementById("fuel").innerHTML=0;
+			document.getElementById("Fuel").innerHTML=0;
 		}
 }
 
@@ -196,11 +196,11 @@ function porcentajeGasolina() {
 //FUNCION QUE ACTUALIZA EL MARCADOR DE FUEL
 function actualizarGasolina(){
 	gasolina-=1;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
+	document.getElementById("Fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("Fuel").style.color="rgb("+0+(100-porcentajeGasolina())+"%, 0%, 0%)";
 	if (gasolina<=0) {
 		apagarMotor();
-		document.getElementById("fuel").innerHTML=0;
+		document.getElementById("Fuel").innerHTML=0;
 	}
 }
 //FUNCION QUE RESPONDE AL MOMENTO DE APAGAR EL MOTOR DE LA NAVE
@@ -240,8 +240,8 @@ function restart(){
 	a = g;
 	dt = 0.016683;
 	gasolina=gasolinaTotal;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="black";
+	document.getElementById("Fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("Fuel").style.color="black";
 }
 //OJO COMPORTAMIENTO ESCRITORIO
 function reiniciarJuego() {
@@ -255,8 +255,8 @@ function reiniciarJuego() {
 	a = g;
 	dt = 0.016683;
 	gasolina=gasolinaTotal;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="black";
+	document.getElementById("Fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("Fuel").style.color="black";
 	reanudar();
 	clearInterval(timer);
 	start();
@@ -293,7 +293,7 @@ function reanudarSmartphone() {
 	document.getElementById("botonAjustesSmartphone").style.display="none";
 	document.getElementById('izquierda').style.display="inline-block";
 	document.getElementById('nave').style.display="inline-block";
-	document.getElementById('zonaAterrizaje').style.display="inline-block";
+	document.getElementById('aterrizaje').style.display="inline-block";
 	document.getElementById('derechaSmartphone').style.backgroundImage='url(img/saturno.png)';
 	document.getElementById('derechaSmartphone').style.backgroundSize='60%';
 	document.getElementById('derechaSmartphone').style.backgroundRepeat='no-repeat';
@@ -322,15 +322,15 @@ function reiniciarJuegoSmartphone() {
 	a = g;
 	dt = 0.016683;
 	gasolina=gasolinaTotal;
-	document.getElementById("fuel").innerHTML=porcentajeGasolina();
-	document.getElementById("fuel").style.color="black";
+	document.getElementById("Fuel").innerHTML=porcentajeGasolina();
+	document.getElementById("Fuel").style.color="black";
 	reanudarSmartphone();
 	clearInterval(timer);
 	start();
 	eventosOn();
 	document.getElementById("intentos").innerHTML=intentos;
-	document.getElementById("gameOver").style.display="none";
-	document.getElementById("userWin").style.display="none";
+	document.getElementById("perdedor").style.display="none";
+	document.getElementById("ganador").style.display="none";
 	if (modeloNave==1) {
 		document.getElementById("imgNave").src="img/nave.png";
 	} else {
@@ -340,7 +340,7 @@ function reiniciarJuegoSmartphone() {
 
 function mostrarAjustesSmartphone() {
 	pausarSmartphone();
-	document.getElementById("settings").style.display="block";
+	document.getElementById("modalidad").style.display="block";
 }
 
 function mostrarInstruccionesSmartphone() {
