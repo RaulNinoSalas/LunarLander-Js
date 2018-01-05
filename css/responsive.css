@@ -4,6 +4,7 @@ h1, h2, h3 {
 p {
     color: #c7ca2a;
 }
+
 #contenedor,html{
 	height:100%;padding:0px;margin:0px;
 	background-image: url("../img/fondo.jpg");
@@ -261,6 +262,12 @@ p {
 	display: block;
 	margin: auto;
 }
+
+#imgMotor{
+	height: 40%;
+	display: none;
+	margin: auto;
+}
 #saturno {
     text-align: left;
     position: fixed;
@@ -275,12 +282,6 @@ p {
     height: 10%;
     left: 5%;
 }
-#imgMotor{
-	height: 40%;
-	display: none;
-	margin: auto;
-}
-
 #perdedor{
 	background-image: url("../img/interfaz1.png");
 	text-align: center;
