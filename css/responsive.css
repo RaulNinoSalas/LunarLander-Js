@@ -238,7 +238,16 @@ p {
 	top: 2px;
 	right: 2px;
 }
-
+#cerrar {
+	background-color:#d5e2d8;
+	border-style: solid;
+	border-color: #ce98e7;
+	width: 15%;
+	max-width: 50px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+}
 #aterrizaje{
 	height:15%;
 	width:100%;
