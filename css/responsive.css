@@ -1,10 +1,9 @@
-h1, h2, h3 {
-    color: #e0b12e;
+h1, h2, h3, h4, h5 {
+    color: #efdcd7;
 }
 p {
-    color: #c7ca2a;
+    color: #1b1817;
 }
-
 #contenedor,html{
 	height:100%;padding:0px;margin:0px;
 	background-image: url("../img/fondo.jpg");
@@ -182,7 +181,8 @@ p {
 
 #modalidad{
 	display: none;
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -194,10 +194,7 @@ p {
 	background-color: #0f158b;
 	border-style: outset;
 }
-#modalidad p {
-	color: #fafb05;
-	font-size: 30px;
-}
+
 #dificultad {
 	padding: 10px;
 	font-size: 120%;
@@ -213,8 +210,8 @@ p {
 
 #menuInstrucciones {
 	margin: 5%;
-	background-image: url("../img/interfaz1.png");
-	background-repeat: repeat;
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -224,10 +221,7 @@ p {
 	background-color: #0f158b;
 	border-style: outset;
 }
-#menuInstrucciones p {
-	color: #fafb05;
-	font-size: 30px;
-}
+
 #close {
 	background-color:#d5e2d8;
 	border-style: solid;
@@ -292,7 +286,8 @@ p {
     left: 5%;
 }
 #perdedor{
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -300,18 +295,12 @@ p {
 	width: 80%;
 	left: 10%;
 	top: 10%;
-}
-#perdedor p {
-	background-color: #0f158b;
-	border-style: outset;
-}
-#perdedor h2 {
-	color: #fafb05;
-	font-size: 30px;
 }
 
+
 #ganador{
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -320,13 +309,7 @@ p {
 	left: 10%;
 	top: 10%;
 }
-#ganador p {
-	background-color: #0f158b;
-	border-style: outset;
-}
-#ganador h2 {
-	color: #fafb05;
-	font-size: 30px;
-}
+
+
 #jugarOtraVezSmartphone{display: none;}
 #jugarAgainSmartphone{display: none;}

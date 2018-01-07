@@ -1,11 +1,14 @@
 h1, h2, h3 {
-    color: #e0b12e;
+    color: #efdcd7;
 }
 p {
-    color: #c7ca2a;
+    color: #1b1817;
 }
+	
 #contenedor,html{
-	height:100%;padding:0px;margin:0px;
+	height:100%;
+	padding:0px;
+	margin:0px;
 	background-image: url("../img/fondo.jpg");
 	font-family: Arial;
 }
@@ -14,7 +17,8 @@ p {
 	display: inline-block; 
 	width: 25%;
 	height: 100%;
-	position: fixed;left: 0px;
+	position: fixed;
+	left: 0px;
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	pointer-events: auto;
@@ -46,9 +50,14 @@ p {
 	background-position: 50% 50%;
 	text-align: center;
 }
-#botonOn:active {z-index:1;	border-style: inset; background-color: #dbc2c7;}
+#botonOn:active {
+	z-index:1;	
+	border-style: inset; 
+	background-color: #dbc2c7;
+}
 
 #derecha{display: none;}
+
 #derechaSmartphone{
 	background-image: url("../img/saturno.png");
 	background-repeat: no-repeat;
@@ -56,9 +65,11 @@ p {
 	background-size: 60%;
 	display:block !important;
 	pointer-events: auto;
-	width:35%;height:100%;
-	position: fixed; right: 0px;
-}
+	width:35%;
+	height:100%;
+	position: fixed; 
+	right: 0px;
+	}
 
 #reanudarSmartphone:active {border-style: inset;background-color: #d5e2d8;}
 #reanudarSmartphone:hover {background-color: #ce98e7;}
@@ -172,10 +183,10 @@ p {
 	margin-top: 0px;
 }
 
-
 #modalidad{
 	display: none;
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	position: absolute;
 	width: 100%;
@@ -184,10 +195,6 @@ p {
 #modalidad b {
 	background-color: #0f158b;
 	border-style: outset;
-}
-#modalidad p {
-	color: #fafb05;
-	font-size: 30px;
 }
 #dificultad {
 	padding: 10px;
@@ -203,7 +210,8 @@ p {
 }
 
 #menuInstrucciones {
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	position: absolute;
 	width: 100%;
@@ -214,14 +222,10 @@ p {
 	background-color: #c4d9e0;
 	border-style: outset;
 }
-#menuInstrucciones p {
-	color: #fafb05;
-	font-size: 30px;
-}
 #close {
 	background-color:#c4d9e0;
 	border-style: solid;
-	border-color: #2E8B57;
+	border-color: #ce98e7;
 	width: 40px;
 	max-width: 50px;
 	position: absolute;
@@ -285,7 +289,8 @@ p {
 }
 
 #perdedor{
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -293,18 +298,11 @@ p {
 	width: 80%;
 	left: 10%;
 	top: 10%;
-}
-#perdedor p {
-	background-color: #0f158b;
-	border-style: outset;
-}
-#perdedor h2 {
-	color: #fafb05;
-	font-size: 30px;
 }
 
 #ganador{
-	background-image: url("../img/interfaz1.png");
+	background-image: url("../img/interfaz.png");
+	background-size: 1%;
 	text-align: center;
 	border-style: outset;
 	position: absolute;
@@ -313,13 +311,6 @@ p {
 	left: 10%;
 	top: 10%;
 }
-#ganador p {
-	background-color: #0f158b;
-	border-style: outset;
-}
-#ganador h2 {
-	color: #fafb05;
-	font-size: 30px;
-}
+
 #jugarOtraVez{display: none;}
 #jugarAgain{display: none;}

@@ -1,0 +1,16 @@
+body {
+	background-image: url("../img/fondo.jpg");
+	font-family: Arial;
+}
+
+#contenedor {
+
+    background-image: url("../img/interfaz.png");
+    background-size: 1%;
+	border-style: ridge;
+	padding: 5%;
+}
+
+#volver {
+	text-align: center;
+}
