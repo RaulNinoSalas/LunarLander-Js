@@ -307,7 +307,7 @@ function pausarSmartphone() {
 	document.getElementById("reiniciarSmartphone").style.display="inline-block";
 	document.getElementById("ayudaSmartphone").style.display="inline-block";
 	document.getElementById("botonAjustesSmartphone").style.display="inline-block";
-	document.getElementById('derechaSmartphone').style.backgroundImage='url(img/interfaz1.png)';
+	document.getElementById('derechaSmartphone').style.backgroundImage='url(img/interfaz.png)';
 	document.getElementById('derechaSmartphone').style.backgroundSize='auto';
 	document.getElementById('derechaSmartphone').style.backgroundRepeat='repeat';
 	document.getElementById('derechaSmartphone').style.width='100%'; 	
